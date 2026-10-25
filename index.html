@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея — слайдер</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="gallery">
+    <h1 class="gallery__title">Галерея</h1>
+
+    <div class="slider">
+      <button type="button" class="slider__arrow slider__arrow--prev" id="prevBtn" aria-label="Назад">
+        <span aria-hidden="true">&#8592;</span>
+      </button>
+
+      <div class="slider__viewport">
+        <div class="slider__track" id="track">
+          <div class="slider__slide"><img src="images/image1.jpg" alt="Изображение 1"></div>
+          <div class="slider__slide"><img src="images/image2.jpg" alt="Изображение 2"></div>
+          <div class="slider__slide"><img src="images/image3.jpg" alt="Изображение 3"></div>
+          <div class="slider__slide"><img src="images/image4.jpg" alt="Изображение 4"></div>
+          <div class="slider__slide"><img src="images/image5.jpg" alt="Изображение 5"></div>
+          <div class="slider__slide"><img src="images/image6.jpg" alt="Изображение 6"></div>
+          <div class="slider__slide"><img src="images/image7.jpg" alt="Изображение 7"></div>
+          <div class="slider__slide"><img src="images/image8.jpg" alt="Изображение 8"></div>
+        </div>
+      </div>
+
+      <button type="button" class="slider__arrow slider__arrow--next" id="nextBtn" aria-label="Вперёд">
+        <span aria-hidden="true">&#8594;</span>
+      </button>
+    </div>
+
+    <div class="pager" id="pager" role="tablist" aria-label="Страницы галереи"></div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
